@@ -170,9 +170,9 @@ TEST_CASE("Search by prefix") {
     SECTION("Search is inclusive") {
         VALIDATE_SETS(trie.search_by_prefix("aa"), as_vec({ "aa", "aaa", "aabb", "aabab", "aaaab", "aaqqq" }));
     }
-//    SECTION("Prefix not in the trie") {
-//        VALIDATE_SETS(trie.search_by_prefix(""), extract_all(trie));
-//    }
+    SECTION("Prefix not in the trie") {
+        VALIDATE_SETS(trie.search_by_prefix(""), extract_all(trie));
+    }
 }
 
 TEST_CASE("Get prefixes") {
@@ -255,7 +255,7 @@ TEST_CASE("Iterator") {
     }
 }
 
-/*
+
 TEST_CASE("Copy") {
     SECTION("Copy constructor") {
         SECTION("Verify that deep copy is performed") {
@@ -317,6 +317,7 @@ TEST_CASE("Copy") {
     }
 }
 
+ /*
 TEST_CASE("Move operations") {
     SECTION("Move constructor") {
         SECTION("From an empty trie") {

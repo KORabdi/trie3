@@ -95,8 +95,28 @@ trie::trie(const std::vector<std::string>& strings) {
     }
 }
 
+void deep_copy(trie_node*& actualNode, const trie_node* copiedOne){
+    for (int i = 0; i < num_chars; ++i) {
+        if(copiedOne->children[i] != nullptr){
+            //Create new node and put it in actual node
+            auto x = new trie_node;
+            x->payload = copiedOne->children[i]->payload;
+            x->is_terminal = copiedOne->children[i]->is_terminal;
+            x->parent = actualNode;
+            actualNode->children[i] = x;
+
+            //Recursive repeat it
+            deep_copy(actualNode->children[i],copiedOne->children[i]);
+        }
+    }
+}
+
 trie::trie(const trie& rhs) {
-    this->m_root = rhs.m_root;
+    auto x = new trie_node;
+    x->payload = rhs.m_root->payload;
+    x->is_terminal = rhs.m_root->is_terminal;
+    this->m_root = x;
+    deep_copy(this->m_root,rhs.m_root);
     this->m_size = rhs.m_size;
 }
 
@@ -160,9 +180,9 @@ void search(std::vector<std::string>& vector, const trie_node* node, std::string
 } //done
 
 std::vector<std::string> trie::search_by_prefix(const std::string& str) const {
-    if(!this->contains(str)){
-        return {};
-    }
+//    if(!this->contains(str)){
+//        return {};
+//    }
     trie_node * node = this->m_root;
 
     //GET actual node
@@ -228,7 +248,6 @@ const trie_node* iterator_rekurze(const trie_node* p,int index = 0){
 
 trie::const_iterator trie::begin() const {
     const trie_node* x = iterator_rekurze(this->m_root);
-    std::cout << x->payload << " WTF";
     return {x};
 }
 
@@ -288,12 +307,13 @@ std::ostream& operator<<(std::ostream& out, trie const& trie) {
 
 
 trie::const_iterator& trie::const_iterator::operator++() {
-    //this->current_node = iterator_rekurze(this->current_node);
+    this->current_node = iterator_rekurze(this->current_node);
     return *this;
 }
 
 trie::const_iterator trie::const_iterator::operator++(int) {
-    return {};
+    this->current_node = iterator_rekurze(this->current_node);
+    return *this;
 }
 
 trie::const_iterator::const_iterator(const trie_node* node) {
