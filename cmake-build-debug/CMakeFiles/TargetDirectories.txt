@@ -1,0 +1,3 @@
+D:/c-school/trie-31/cmake-build-debug/CMakeFiles/trie_31.dir
+D:/c-school/trie-31/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/c-school/trie-31/cmake-build-debug/CMakeFiles/rebuild_cache.dir
