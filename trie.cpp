@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "trie.hpp"
 
 bool trie::erase(const std::string& str) {
@@ -117,8 +118,23 @@ trie& trie::operator=(trie&& rhs) {
 }
 
 
+void remove_trie(trie_node* & _node){
+    for (int i = 0; i < num_chars; i++) {
+        if(_node->children[i] != 0) {
+            trie_node* node = _node->children[i];
+            remove_trie(node);
+            delete node;
+        }
+    }
+} //done
 
-trie::~trie() {}
+trie::~trie() {
+//    trie_node * root = this->m_root;
+//    remove_trie(root);
+//    delete root;
+//    this->m_root = nullptr;
+//    this->m_size = 0;
+} //done
 
 size_t trie::size() const {
     return this->m_size;
@@ -128,21 +144,101 @@ bool trie::empty() const {
     return this->size() == 0;
 } //done
 
+void search(std::vector<std::string>& vector, const trie_node* node, std::string words){
+    for (int i = 0; i < num_chars; i++) {
+        if(node->children[i] != nullptr) {
+            trie_node* n = node->children[i];
+            words += n->payload;
+            if(n->is_terminal){
+                vector.push_back(words);
+            }
+
+            search(vector,n,words);
+            words.pop_back();
+        }
+    }
+} //done
+
 std::vector<std::string> trie::search_by_prefix(const std::string& str) const {
-    return {};
-}
+    if(!this->contains(str)){
+        return {};
+    }
+    trie_node * node = this->m_root;
+
+    //GET actual node
+    unsigned long long i = 0;
+    unsigned long long n = str.length();
+    const char * c = str.c_str();
+    while(i<n){
+        node = node->children[c[i]];
+        ++i;
+    }
+
+    std::vector<std::string> v;
+    //Check if actual prefix is word
+    if(node->is_terminal){
+        v.push_back(str);
+    }
+
+    //Recursive search all nodes
+    search(v,node,str);
+
+    return v;
+} //done
 
 std::vector<std::string> trie::get_prefixes(const std::string & str) const {
-    return {};
+    trie_node * node = this->m_root;
+    unsigned long long i = 0;
+    unsigned long long n = str.length();
+    const char * c = str.c_str();
+    std::vector<std::string> v;
+    std::string s;
+    while (i < n){
+        node = node->children[c[i]];
+        if(node != nullptr){
+            s.push_back(node->payload);
+            if(node->is_terminal){
+                v.push_back(s);
+            }
+        }
+        ++i;
+    }
+    return v;
+}
+
+
+const trie_node* iterator_rekurze(const trie_node* p,int index = 0){
+    const trie_node* node = p;
+    for (int i = index; i < num_chars; ++i) {
+        if(node->children[i] != nullptr){
+            node = node->children[i];
+            if(node->is_terminal){
+                return node;
+            }else{
+                return iterator_rekurze(node);
+            }
+        }
+    }
+    if(p->parent != nullptr){
+        iterator_rekurze(p->parent,p->payload+1);
+    }else{
+        return nullptr;
+    }
 }
 
 trie::const_iterator trie::begin() const {
-    return {};
+    const trie_node* x = iterator_rekurze(this->m_root);
+    std::cout << x->payload << " WTF";
+    return {x};
 }
 
 trie::const_iterator trie::end() const {
     return {};
 }
+
+
+
+
 
 void trie::swap(trie& rhs) {}
 
@@ -186,7 +282,13 @@ std::ostream& operator<<(std::ostream& out, trie const& trie) {
     return out;
 }
 
+
+
+
+
+
 trie::const_iterator& trie::const_iterator::operator++() {
+    //this->current_node = iterator_rekurze(this->current_node);
     return *this;
 }
 
@@ -194,16 +296,35 @@ trie::const_iterator trie::const_iterator::operator++(int) {
     return {};
 }
 
-trie::const_iterator::const_iterator(const trie_node* node) {}
-
-bool trie::const_iterator::operator==(const trie::const_iterator& rhs) const {
-    return true;
+trie::const_iterator::const_iterator(const trie_node* node) {
+    this->current_node = node;
 }
 
-bool trie::const_iterator::operator!=(const trie::const_iterator& rhs) const {
+bool trie::const_iterator::operator==(const trie::const_iterator& rhs) const {
+    if(rhs.current_node != nullptr && this->current_node != nullptr){
+        return true;
+    }else if(rhs.current_node == nullptr && this->current_node == nullptr){
+        return true;
+    }
     return false;
 }
 
+bool trie::const_iterator::operator!=(const trie::const_iterator& rhs) const {
+    return !(*this==rhs);
+    //return false;
+}
+
 trie::const_iterator::reference trie::const_iterator::operator*() const {
-    return {};
+    const trie_node * tmp = this->current_node;
+    std::string result = "";
+    while(tmp != nullptr)
+    {
+        if(tmp->payload != 0) {
+            result.push_back(tmp->payload);
+        }
+        tmp = tmp->parent;
+    }
+
+    std::reverse(result.begin(), result.end());
+    return result;
 }
