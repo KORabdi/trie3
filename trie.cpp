@@ -2,6 +2,8 @@
 #include <algorithm>
 #include "trie.hpp"
 
+void remove_trie(trie_node* & _node);
+
 bool trie::erase(const std::string& str) {
     trie_node* node = this->m_root;
     unsigned long long i = 0;
@@ -115,25 +117,38 @@ trie::trie(const trie& rhs) {
     auto x = new trie_node;
     x->payload = rhs.m_root->payload;
     x->is_terminal = rhs.m_root->is_terminal;
+    deep_copy(x,rhs.m_root);
     this->m_root = x;
-    deep_copy(this->m_root,rhs.m_root);
     this->m_size = rhs.m_size;
 }
 
 trie& trie::operator=(const trie& rhs) {
-    this->m_root = rhs.m_root;
+
+    //Create copy
+    auto x = new trie_node;
+    x->payload = rhs.m_root->payload;
+    x->is_terminal = rhs.m_root->is_terminal;
+    deep_copy(x,rhs.m_root);
+
+    //Deallocate old data
+    remove_trie(this->m_root);
+    delete m_root;
+
+    //Put new data
+    this->m_root = x;
     this->m_size = rhs.m_size;
+
     return *this;
 }
 
 trie::trie(trie&& rhs) {
-    this->m_root = rhs.m_root;
-    this->m_size = rhs.m_size;
+//    this->m_root = rhs.m_root;
+//    this->m_size = rhs.m_size;
 }
 
 trie& trie::operator=(trie&& rhs) {
-    this->m_root = rhs.m_root;
-    this->m_size = rhs.m_size;
+//    this->m_root = rhs.m_root;
+//    this->m_size = rhs.m_size;
     return *this;
 }
 
@@ -149,11 +164,11 @@ void remove_trie(trie_node* & _node){
 } //done
 
 trie::~trie() {
-//    trie_node * root = this->m_root;
-//    remove_trie(root);
-//    delete root;
-//    this->m_root = nullptr;
-//    this->m_size = 0;
+    trie_node * root = this->m_root;
+    remove_trie(root);
+    delete root;
+    this->m_root = nullptr;
+    this->m_size = 0;
 } //done
 
 size_t trie::size() const {
