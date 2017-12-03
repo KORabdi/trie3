@@ -300,11 +300,26 @@ bool trie::operator<(const trie& rhs) const {
 }
 
 trie trie::operator&(trie const& rhs) const {
-    return {};
+    std::vector<std::string> vs1 = rhs.search_by_prefix("");
+    auto x = new trie();
+    for (int i = 0; i < vs1.size(); ++i) {
+        if(this->contains(vs1[i])){
+            x->insert(vs1[i]);
+        }
+    }
+    return *x;
+//    return {};
 }
 
 trie trie::operator|(trie const& rhs) const {
-    return {};
+    std::vector<std::string> vs1 = rhs.search_by_prefix("");
+    std::vector<std::string> vs2 = this->search_by_prefix("");
+    auto x = new trie(vs1);
+    for (int i = 0; i < vs2.size(); ++i) {
+        x->insert(vs2[i]);
+    }
+    return *x;
+//    return {};
 }
 
 bool operator!=(const trie& lhs, const trie& rhs) {

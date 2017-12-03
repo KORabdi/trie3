@@ -14,9 +14,8 @@
     <list default="true" id="1e34b3bf-7d17-4205-98fe-9854e38a2a7d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie-tests.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie-tests.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/trie_31.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/trie_31.exe" />
-      <change beforePath="$PROJECT_DIR$/trie-tests.cpp" afterPath="$PROJECT_DIR$/trie-tests.cpp" />
       <change beforePath="$PROJECT_DIR$/trie.cpp" afterPath="$PROJECT_DIR$/trie.cpp" />
       <change beforePath="$PROJECT_DIR$/trie.zip" afterPath="$PROJECT_DIR$/trie.zip" />
     </list>
@@ -46,11 +45,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="trie.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="trie.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trie.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
-                  <caret line="290" column="10" lean-forward="false" selection-start-line="290" selection-start-column="10" selection-end-line="290" selection-end-column="10" />
+                <state relative-caret-position="398">
+                  <caret line="318" column="8" lean-forward="false" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                     <element signature="e#101#612#0" expanded="false" />
@@ -60,30 +59,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="trie.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../trie-2/trie.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-546">
-                  <caret line="141" column="1" lean-forward="false" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#63#294#0" expanded="false" />
-                    <element signature="e#303#814#0" expanded="false" />
-                    <element signature="e#823#1405#0" expanded="false" />
-                    <element signature="e#1414#1828#0" expanded="false" />
-                    <element signature="e#1837#1909#0" expanded="false" />
-                    <element signature="e#1919#2101#0" expanded="false" />
-                    <element signature="e#2111#2352#0" expanded="false" />
-                    <element signature="e#2514#2568#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="trie-tests.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="trie-tests.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trie-tests.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-593">
-                  <caret line="337" column="30" lean-forward="false" selection-start-line="337" selection-start-column="30" selection-end-line="337" selection-end-column="30" />
+                <state relative-caret-position="3629">
+                  <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -92,7 +72,7 @@
           <file leaf-file-name="catch.hpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/catch.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
+                <state relative-caret-position="-1289">
                   <caret line="10328" column="58" lean-forward="false" selection-start-line="10328" selection-start-column="58" selection-end-line="10328" selection-end-column="58" />
                   <folding />
                 </state>
@@ -106,7 +86,7 @@
           <file leaf-file-name="trie.hpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trie.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
+                <state relative-caret-position="543">
                   <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
                   <folding>
                     <element signature="e#326#957#1" expanded="false" />
@@ -121,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>trie_node</find>
       <find>wtff</find>
       <find>cout</find>
       <find>get_prefixes</find>
@@ -137,7 +116,6 @@
       <find>const_iterator</find>
       <find>wtf</find>
       <find>!=</find>
-      <find>search</find>
       <find>std</find>
       <find>std::co</find>
       <find>deep_</find>
@@ -145,7 +123,11 @@
       <find>~</find>
       <find>deep</find>
       <find>reku</find>
+      <find>search</find>
+      <find>trie_node</find>
       <find>swap</find>
+      <find>trie unio</find>
+      <find>deep_co</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,8 +138,8 @@
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/../trie-2/trie.cpp" />
-        <option value="$PROJECT_DIR$/trie-tests.cpp" />
         <option value="$PROJECT_DIR$/trie.cpp" />
+        <option value="$PROJECT_DIR$/trie-tests.cpp" />
       </list>
     </option>
   </component>
@@ -280,44 +262,44 @@
       <updated>1512215819726</updated>
       <workItem from="1512215821392" duration="816000" />
       <workItem from="1512217389932" duration="34370000" />
-      <workItem from="1512283520727" duration="3150000" />
+      <workItem from="1512283520727" duration="5911000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2017.12.03 at 13h 46m 04s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 46m 07s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 51m 07s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 46m 45s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 52m 04s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 47m 23s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 52m 34s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 48m 10s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 53m 18s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 48m 48s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 57m 01s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 49m 38s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 57m 56s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 50m 06s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 58m 20s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 50m 33s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 13h 59m 08s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 50m 56s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 02m 20s.xml">
+    <history-entry file="Unnamed - 2017.12.03 at 14h 51m 32s.xml">
       <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38336000" />
+    <option name="totallyTimeSpent" value="41097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,15 +314,15 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14226191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14225501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36038962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36038962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33766234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33766234" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991555" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991276" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -473,25 +455,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catch.hpp">
+    <entry file="file://$PROJECT_DIR$/trie.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10328" column="58" lean-forward="false" selection-start-line="10328" selection-start-column="58" selection-end-line="10328" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trie-tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-593">
-          <caret line="337" column="30" lean-forward="false" selection-start-line="337" selection-start-column="30" selection-end-line="337" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="543">
+          <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+          <folding>
+            <element signature="e#326#957#1" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../trie-2/trie.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-546">
+        <state relative-caret-position="-350">
           <caret line="141" column="1" lean-forward="false" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
           <folding>
             <element signature="e#63#294#0" expanded="false" />
@@ -506,25 +482,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trie.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
-          <folding>
-            <element signature="e#326#957#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trie.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="290" column="10" lean-forward="false" selection-start-line="290" selection-start-column="10" selection-end-line="290" selection-end-column="10" />
+        <state relative-caret-position="398">
+          <caret line="318" column="8" lean-forward="false" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#101#612#0" expanded="false" />
             <element signature="e#1431#1845#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catch.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1289">
+          <caret line="10328" column="58" lean-forward="false" selection-start-line="10328" selection-start-column="58" selection-end-line="10328" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trie-tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3629">
+          <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
