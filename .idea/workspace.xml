@@ -14,7 +14,7 @@
     <list default="true" id="1e34b3bf-7d17-4205-98fe-9854e38a2a7d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/trie_31.dir/trie.cpp.obj" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/trie_31.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/trie_31.exe" />
       <change beforePath="$PROJECT_DIR$/trie.cpp" afterPath="$PROJECT_DIR$/trie.cpp" />
       <change beforePath="$PROJECT_DIR$/trie.zip" afterPath="$PROJECT_DIR$/trie.zip" />
@@ -32,7 +32,7 @@
     <favorites_list name="trie_31" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49947312">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
@@ -45,25 +45,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="trie.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="trie.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trie.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="398">
-                  <caret line="318" column="8" lean-forward="false" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
+                <state relative-caret-position="232">
+                  <caret line="315" column="10" lean-forward="false" selection-start-line="315" selection-start-column="10" selection-end-line="315" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                     <element signature="e#101#612#0" expanded="false" />
-                    <element signature="e#1431#1845#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="trie-tests.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="trie-tests.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trie-tests.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3629">
-                  <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
+                <state relative-caret-position="177">
+                  <caret line="258" column="15" lean-forward="false" selection-start-line="258" selection-start-column="11" selection-end-line="258" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -72,8 +71,8 @@
           <file leaf-file-name="catch.hpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/catch.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1289">
-                  <caret line="10328" column="58" lean-forward="false" selection-start-line="10328" selection-start-column="58" selection-end-line="10328" selection-end-column="58" />
+                <state relative-caret-position="122">
+                  <caret line="10411" column="33" lean-forward="false" selection-start-line="10411" selection-start-column="33" selection-end-line="10411" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -86,8 +85,8 @@
           <file leaf-file-name="trie.hpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trie.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="543">
-                  <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+                <state relative-caret-position="177">
+                  <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
                   <folding>
                     <element signature="e#326#957#1" expanded="false" />
                   </folding>
@@ -101,9 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wtff</find>
-      <find>cout</find>
-      <find>get_prefixes</find>
       <find>iterator</find>
       <find>begin()</find>
       <find>beg</find>
@@ -119,8 +115,6 @@
       <find>std</find>
       <find>std::co</find>
       <find>deep_</find>
-      <find>copy</find>
-      <find>~</find>
       <find>deep</find>
       <find>reku</find>
       <find>search</find>
@@ -128,6 +122,14 @@
       <find>swap</find>
       <find>trie unio</find>
       <find>deep_co</find>
+      <find>rekurze</find>
+      <find>new</find>
+      <find>m_root</find>
+      <find>total_time / last_time</find>
+      <find>~</find>
+      <find>add</find>
+      <find>move as</find>
+      <find>copy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,8 +140,8 @@
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/../trie-2/trie.cpp" />
-        <option value="$PROJECT_DIR$/trie.cpp" />
         <option value="$PROJECT_DIR$/trie-tests.cpp" />
+        <option value="$PROJECT_DIR$/trie.cpp" />
       </list>
     </option>
   </component>
@@ -156,11 +158,30 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>C/C++</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GeneralC/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -207,17 +228,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Catch.Unnamed">
+  <component name="RunManager" selected="Catch.Trie intersection - complexity">
     <configuration name="Copy" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_METHOD="Copy" TEST_MODE="SUITE_TEST">
-      <envs />
-    </configuration>
-    <configuration name="Get prefixes" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_METHOD="Get prefixes" TEST_MODE="SUITE_TEST">
       <envs />
     </configuration>
     <configuration name="Move operations" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_METHOD="Move operations" TEST_MODE="SUITE_TEST">
       <envs />
     </configuration>
     <configuration name="Search by prefix" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_METHOD="Search by prefix" TEST_MODE="SUITE_TEST">
+      <envs />
+    </configuration>
+    <configuration name="Trie intersection - complexity" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_CLASS="[.long]" TEST_METHOD="Trie intersection - complexity" TEST_MODE="SUITE_TEST">
+      <envs />
+    </configuration>
+    <configuration name="Trie intersection" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_METHOD="Trie intersection" TEST_MODE="SUITE_TEST">
       <envs />
     </configuration>
     <configuration name="Unnamed" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31" TEST_MODE="SUITE_TEST">
@@ -229,21 +253,23 @@
     <configuration name="trie_31" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="trie_31" TARGET_NAME="trie_31" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="trie_31" RUN_TARGET_NAME="trie_31">
       <envs />
     </configuration>
-    <list size="7">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.trie_31" />
       <item index="2" class="java.lang.String" itemvalue="Catch.Unnamed" />
-      <item index="3" class="java.lang.String" itemvalue="Catch.Get prefixes" />
-      <item index="4" class="java.lang.String" itemvalue="Catch.Search by prefix" />
-      <item index="5" class="java.lang.String" itemvalue="Catch.Copy" />
-      <item index="6" class="java.lang.String" itemvalue="Catch.Move operations" />
+      <item index="3" class="java.lang.String" itemvalue="Catch.Search by prefix" />
+      <item index="4" class="java.lang.String" itemvalue="Catch.Copy" />
+      <item index="5" class="java.lang.String" itemvalue="Catch.Move operations" />
+      <item index="6" class="java.lang.String" itemvalue="Catch.Trie intersection - complexity" />
+      <item index="7" class="java.lang.String" itemvalue="Catch.Trie intersection" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Catch.Move operations" />
-        <item index="1" class="java.lang.String" itemvalue="Catch.Copy" />
-        <item index="2" class="java.lang.String" itemvalue="Catch.Search by prefix" />
-        <item index="3" class="java.lang.String" itemvalue="Catch.Get prefixes" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Catch.Trie intersection - complexity" />
+        <item index="1" class="java.lang.String" itemvalue="Catch.Trie intersection" />
+        <item index="2" class="java.lang.String" itemvalue="Catch.Move operations" />
+        <item index="3" class="java.lang.String" itemvalue="Catch.Copy" />
+        <item index="4" class="java.lang.String" itemvalue="Catch.Search by prefix" />
       </list>
     </recent_temporary>
   </component>
@@ -262,44 +288,44 @@
       <updated>1512215819726</updated>
       <workItem from="1512215821392" duration="816000" />
       <workItem from="1512217389932" duration="34370000" />
-      <workItem from="1512283520727" duration="5911000" />
+      <workItem from="1512283520727" duration="14267000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2017.12.03 at 14h 46m 07s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 08m 21s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 46m 45s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 09m 30s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 47m 23s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 10m 21s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 48m 10s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 11m 12s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 48m 48s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 11m 45s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 49m 38s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 14m 07s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 50m 06s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 14m 12s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 50m 33s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 14m 17s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 50m 56s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 22m 20s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unnamed - 2017.12.03 at 14h 51m 32s.xml">
-      <configuration name="Unnamed" configurationId="CMakeCatchTestRunConfigurationType" />
+    <history-entry file="Trie_intersection_-_complexity - 2017.12.03 at 17h 22m 29s.xml">
+      <configuration name="Trie intersection - complexity" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41097000" />
+    <option name="totallyTimeSpent" value="49453000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,7 +337,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14225501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -410,7 +436,6 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#101#612#0" expanded="false" />
-            <element signature="e#1431#1845#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -455,16 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trie.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
-          <folding>
-            <element signature="e#326#957#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../trie-2/trie.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-350">
@@ -482,31 +497,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trie.cpp">
+    <entry file="file://$PROJECT_DIR$/catch.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="318" column="8" lean-forward="false" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#101#612#0" expanded="false" />
-            <element signature="e#1431#1845#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="122">
+          <caret line="10411" column="33" lean-forward="false" selection-start-line="10411" selection-start-column="33" selection-end-line="10411" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catch.hpp">
+    <entry file="file://$PROJECT_DIR$/trie.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1289">
-          <caret line="10328" column="58" lean-forward="false" selection-start-line="10328" selection-start-column="58" selection-end-line="10328" selection-end-column="58" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#326#957#1" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trie-tests.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3629">
-          <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
+        <state relative-caret-position="177">
+          <caret line="258" column="15" lean-forward="false" selection-start-line="258" selection-start-column="11" selection-end-line="258" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trie.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="315" column="10" lean-forward="false" selection-start-line="315" selection-start-column="10" selection-end-line="315" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#101#612#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

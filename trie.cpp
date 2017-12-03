@@ -27,13 +27,7 @@ bool trie::erase(const std::string& str) {
     }
 }
 
-void add_elem(trie_node* & node,const char * & c,const unsigned long long & i){
-    auto * temp = new trie_node;
-    temp->parent = node;
-    temp->payload = c[i];
-    node->children[c[i]] = temp;
-    node = node->children[c[i]];
-}
+void add_elem(trie_node* & node,const char * & c,const unsigned long long & i);
 
 bool trie::insert(const std::string& str) {
     trie_node* node = this->m_root;
@@ -149,6 +143,10 @@ trie::trie(trie&& rhs) {
 }
 
 trie& trie::operator=(trie&& rhs) {
+    if(this->m_root != nullptr){
+        remove_trie(this->m_root);
+        delete m_root;
+    }
     this->m_root = rhs.m_root;
     this->m_size = rhs.m_size;
     rhs.m_root = nullptr;
@@ -158,14 +156,23 @@ trie& trie::operator=(trie&& rhs) {
 
 
 void remove_trie(trie_node* & _node){
-    for (int i = 0; i < num_chars; i++) {
-        if(_node->children[i] != 0) {
-            trie_node* node = _node->children[i];
+    for (auto &i : _node->children) {
+        if(i != nullptr) {
+            trie_node* node = i;
             remove_trie(node);
             delete node;
         }
     }
-} //done
+}
+
+void add_elem(trie_node *&node, const char *&c, const unsigned long long &i) {
+    auto * temp = new trie_node;
+    temp->parent = node;
+    temp->payload = c[i];
+    node->children[c[i]] = temp;
+    node = node->children[c[i]];
+}
+//done
 
 trie::~trie() {
     trie_node * root = this->m_root;
@@ -186,9 +193,9 @@ bool trie::empty() const {
 } //done
 
 void search(std::vector<std::string>& vector, const trie_node* node, std::string words){
-    for (int i = 0; i < num_chars; i++) {
-        if(node->children[i] != nullptr) {
-            trie_node* n = node->children[i];
+    for (auto i : node->children) {
+        if(i != nullptr) {
+            trie_node* n = i;
             words += n->payload;
             if(n->is_terminal){
                 vector.push_back(words);
@@ -261,10 +268,9 @@ const trie_node* iterator_rekurze(const trie_node* p,int index = 0){
         }
     }
     if(p->parent != nullptr){
-        iterator_rekurze(p->parent,p->payload+1);
-    }else{
-        return nullptr;
+        return iterator_rekurze(p->parent,p->payload+1);
     }
+    return nullptr;
 }
 
 trie::const_iterator trie::begin() const {
@@ -287,8 +293,6 @@ void trie::swap(trie& rhs) {
     rhs.m_root = this->m_root;
     this->m_size = s;
     this->m_root = r;
-    r = nullptr;
-    s = 0;
 }
 
 bool trie::operator==(const trie& rhs) const {
@@ -300,25 +304,33 @@ bool trie::operator<(const trie& rhs) const {
 }
 
 trie trie::operator&(trie const& rhs) const {
-    std::vector<std::string> vs1 = rhs.search_by_prefix("");
-    auto x = new trie();
-    for (int i = 0; i < vs1.size(); ++i) {
-        if(this->contains(vs1[i])){
-            x->insert(vs1[i]);
+//    std::vector<std::string> vs1 = rhs.search_by_prefix("");
+//    std::vector<std::string> vs2 = this->search_by_prefix("");
+//    trie x;
+//    for (int i = 0; i < vs2.size(); ++i) {
+//        if(std::find(vs1.begin(), vs1.end(), vs2[i]) != vs1.end()){
+//            x.insert(vs2[i]);
+//        }
+//    }
+//    return x;
+    trie x;
+    for (auto &&rh : rhs) {
+        if(this->contains(rh)){
+            x.insert(rh);
         }
     }
-    return *x;
+    return x;
 //    return {};
 }
 
 trie trie::operator|(trie const& rhs) const {
     std::vector<std::string> vs1 = rhs.search_by_prefix("");
     std::vector<std::string> vs2 = this->search_by_prefix("");
-    auto x = new trie(vs1);
-    for (int i = 0; i < vs2.size(); ++i) {
-        x->insert(vs2[i]);
+    trie x(vs1);
+    for (const auto &i : vs2) {
+        x.insert(i);
     }
-    return *x;
+    return x;
 //    return {};
 }
 
@@ -381,7 +393,7 @@ bool trie::const_iterator::operator!=(const trie::const_iterator& rhs) const {
 
 trie::const_iterator::reference trie::const_iterator::operator*() const {
     const trie_node * tmp = this->current_node;
-    std::string result = "";
+    std::string result;
     while(tmp != nullptr)
     {
         if(tmp->payload != 0) {
