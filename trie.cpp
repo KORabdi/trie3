@@ -142,13 +142,17 @@ trie& trie::operator=(const trie& rhs) {
 }
 
 trie::trie(trie&& rhs) {
-//    this->m_root = rhs.m_root;
-//    this->m_size = rhs.m_size;
+    this->m_root = rhs.m_root;
+    this->m_size = rhs.m_size;
+    rhs.m_root = nullptr;
+    rhs.m_size = 0;
 }
 
 trie& trie::operator=(trie&& rhs) {
-//    this->m_root = rhs.m_root;
-//    this->m_size = rhs.m_size;
+    this->m_root = rhs.m_root;
+    this->m_size = rhs.m_size;
+    rhs.m_root = nullptr;
+    rhs.m_size = 0;
     return *this;
 }
 
@@ -165,9 +169,11 @@ void remove_trie(trie_node* & _node){
 
 trie::~trie() {
     trie_node * root = this->m_root;
-    remove_trie(root);
-    delete root;
-    this->m_root = nullptr;
+    if(root != nullptr){
+        remove_trie(root);
+        delete root;
+        this->m_root = nullptr;
+    }
     this->m_size = 0;
 } //done
 
@@ -195,9 +201,6 @@ void search(std::vector<std::string>& vector, const trie_node* node, std::string
 } //done
 
 std::vector<std::string> trie::search_by_prefix(const std::string& str) const {
-//    if(!this->contains(str)){
-//        return {};
-//    }
     trie_node * node = this->m_root;
 
     //GET actual node
@@ -245,6 +248,9 @@ std::vector<std::string> trie::get_prefixes(const std::string & str) const {
 const trie_node* iterator_rekurze(const trie_node* p,int index = 0){
     const trie_node* node = p;
     for (int i = index; i < num_chars; ++i) {
+        if(index >= 128){
+            break;
+        }
         if(node->children[i] != nullptr){
             node = node->children[i];
             if(node->is_terminal){
@@ -274,7 +280,16 @@ trie::const_iterator trie::end() const {
 
 
 
-void trie::swap(trie& rhs) {}
+void trie::swap(trie& rhs) {
+    trie_node* r = rhs.m_root;
+    size_t s = rhs.m_size;
+    rhs.m_size = this->m_size;
+    rhs.m_root = this->m_root;
+    this->m_size = s;
+    this->m_root = r;
+    r = nullptr;
+    s = 0;
+}
 
 bool trie::operator==(const trie& rhs) const {
     return true;

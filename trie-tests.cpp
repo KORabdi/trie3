@@ -317,7 +317,6 @@ TEST_CASE("Copy") {
     }
 }
 
- /*
 TEST_CASE("Move operations") {
     SECTION("Move constructor") {
         SECTION("From an empty trie") {
@@ -588,4 +587,3 @@ TEST_CASE("Trie intersection - complexity", "[.long]") {
         std::cout << "Trie intersection: i = " << i << " total time = " << (time_diff - 500us).count() << '\n';
     }
 }
-*/
